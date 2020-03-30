@@ -1,0 +1,79 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+
+.row > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.row > div:nth-child(1) {
+  width: 150px;
+}
+
+.row > div:nth-child(2) {
+  width: 100px;
+}
+
+.row > div:nth-child(3) {
+  width: 100px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.result > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result > div > div {
+  flex: 1;
+}
+
+.result > div > div > div {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: rgb(120, 212, 200);
+  border-radius: 4px;
+  margin: 1px;
+}
+
+.result .values {
+  font-size: 32px;
+  width: 300px;
+  margin: 20px auto 10px auto;
+}
+.result .values > div {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: rgb(120, 212, 200);
+  border-radius: 4px;
+  margin: 1px;
+}
+
+.result .bonuses > div {
+  display: flex;
+  flex-direction: row;
+  margin: 4px;
+}
+
+.result .bonuses > div > div {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  flex: 1;
+}
